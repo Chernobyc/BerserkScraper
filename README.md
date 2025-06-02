@@ -2,12 +2,11 @@
 
 download python 3.12
 
-MB create venv
-    python -m venv venv
+python -m venv venv
 
-
-venv\Scripts\activate.bat
+.\Scripts\activate.bat
 
 pip install -r requirements.txt
+<!-- pip install selenium requests webdriver-manager -->
 
 python scraper.py

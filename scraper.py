@@ -38,7 +38,7 @@ def download_image(url, filename):
         print(f"❌ Error downloading {url}: {e}")
 
 
-output_dir = "berserk_images"
+output_dir = "images"
 os.makedirs(output_dir, exist_ok=True)
 
 # Save image to the dir
@@ -89,7 +89,9 @@ def scrape_chapter(chapter_url: str, total_pages: int, driver):
 
 
 if __name__ == "__main__":
-    chapter_url = "https://manga-bay.org/reader/47/7041"
+    deathNote = "https://manga-bay.org/reader/224/31978" # Death note
+    berserk = "https://manga-bay.org/reader/47/7041" # Berserk
+    chapter_url = berserk
     total_pages = 91
     driver = init_driver()
     try:
