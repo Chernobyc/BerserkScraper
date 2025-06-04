@@ -1,12 +1,24 @@
-## To run this script
+# To run this script
 
-download python 3.12
+Download python 3.12
+
+## Maybe need to change the execution policy for this session
+
+Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass
+
+## Create and start the virtual env
 
 python -m venv venv
 
-.\Scripts\activate.bat
+.\venv\Scripts\activate
+
+## Install dependencies
 
 pip install -r requirements.txt
-<!-- pip install selenium requests webdriver-manager -->
 
-python scraper.py
+OR
+pip install selenium requests webdriver-manager
+
+## Run script
+
+python .\scraper.py
